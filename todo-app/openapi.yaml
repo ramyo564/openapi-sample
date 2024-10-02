@@ -30,3 +30,25 @@ paths:
       responses:
         '200':
           description: 할 일 목록을 올바르게 얻음.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  tasks:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: string
+                          description: Task의 식별자
+                          example: 01924db0-8ed3-7da0-a4d3-f216d2c51815
+                        title:
+                          type: string
+                          description: 할 일
+                          example: 숙제하기
+                        createdAt:
+                          type: string
+                          description: 할 일 등록 일시 (UTC)
+                          example: "2024-10-01 12:34:56"
