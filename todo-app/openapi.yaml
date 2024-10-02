@@ -1,0 +1,32 @@
+openapi: 3.0.3
+info:
+  title: To-do service API
+  description: |-
+    간단한 할 일 관리 서비스의 API
+  version: 1.0.0
+servers:
+  - url: http://localhost:8080
+tags:
+  - name: API
+    description: 기본적인 API
+paths:
+  /:
+    get:
+      tags:
+        - API
+      summary: Health cehck
+      description: |
+        API 서버가 잘 작동하는지 확인하는 용도의 API.
+      responses:
+        '200':
+          description: 멀쩡함.
+  /tasks:
+    get:
+      tags:
+        - API
+      summary: Get all tasks
+      description: |
+        할 일 목록을 얻는다.
+      responses:
+        '200':
+          description: 할 일 목록을 올바르게 얻음.
