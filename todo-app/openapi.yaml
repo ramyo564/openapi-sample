@@ -43,11 +43,11 @@ paths:
                         id:
                           type: string
                           description: Task의 식별자
-                          example: 01924db0-8ed3-7da0-a4d3-f216d2c51815
+                          example: 01BX5ZZKBKACTAV9WEVGEMMVRY
                         title:
                           type: string
-                          description: 할 일
-                          example: 숙제하기
+                          description: 할 일에 대한 간단한 설명
+                          example: 과제하기
                         createdAt:
                           type: string
                           description: 할 일 등록 일시 (UTC)
