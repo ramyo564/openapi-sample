@@ -168,7 +168,7 @@ paths:
     patch:
       tags:
         - API
-      summary: Update a task
+      summary: Finish a task
       description: |
         할 일 수정하기 (부분 업데이트)
       parameters:
